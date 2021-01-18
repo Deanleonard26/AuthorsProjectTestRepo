@@ -25,6 +25,7 @@ const Footer = () => {
                 <ContactUs>
                     <h4>Contact Us</h4>
                     <p>Send Email</p>
+                    <p>Facebook</p>
                 </ContactUs>
                 </FooterLinks>
                 <Subscribe>

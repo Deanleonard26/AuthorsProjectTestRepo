@@ -23,38 +23,71 @@ const StoriesShortcut = () => {
 const StoryWrapper = styled.div`
 display:flex;
 flex-direction:column;
+justify-content:center;
+text-align:center;
+align-items:center;
+width:100%;
 `
 
 const StoryImgLinks = styled.div`
 display:flex;
 flex-direction:row;
-justify-content:center;
+justify-content:left;
 flex-wrap:wrap;
 
 
 img {
     width:350px;
     height:450px;
-    margin:20px 40px;
+    margin:10px 25px;
     border-radius:3px;
+}
+
+@media (max-width:800px) {
+    img {
+        width:170px;
+        height:200px;
+        margin:5px;
+        display:block;
+    }
+}
+
+@media (min-width:801px)and (max-width:1400px) {
+    img {
+        width:240px;
+        height:280px;
+    }
 }
 `
 
 const StoryText = styled.p` 
 display:flex;
 flex-direction:column;
+justify-content:left;
 text-align:left;
-width:40%;
-margin-left:120px;
+align-items:left;
+width:80%;
 font-family: 'Space Mono', monospace;
 
 h4{
     font-weight:400;
     font-size:25px;
+    width:40%;
 }
 
 p {
     font-weight:thin;
+    width:40%;
+}
+
+@media (max-width:600px) {
+    h4{
+    width:85%;
+}
+
+p {
+    width:70%;
+}
 }
 `
 

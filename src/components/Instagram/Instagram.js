@@ -97,17 +97,23 @@ const Follow = styled.div `
 button {
     width:130px;
     height:40px;
-    border-radius:2px;
+    border-radius:5px;
     margin-left:50px;
     border:1px solid black;
     background-color:white;
     cursor: pointer;
+    outline:none;
 }
 
 button:hover {
     background-color:lightgray;
     border:0;
     cursor: pointer;
+}
+
+button:active {
+    background-color:grey;
+    color:white;
 }
 
 
