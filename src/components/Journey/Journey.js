@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const Journey = () => {
       return (
             <JourneyWrapper>
-                <h1></h1>
             </JourneyWrapper>
       )
 }
