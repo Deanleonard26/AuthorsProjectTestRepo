@@ -15,9 +15,9 @@ const Instagram = () => {
             </InstaText>
                 <InstaImgLinks1>
                     <img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
-                    <img src='https://images.unsplash.com/photo-1610948237307-bbebf8da8a8d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
-                    <img src='https://images.unsplash.com/photo-1610935591850-9a3bf14810c0?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
-                    <img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
+                    <ImgWrapper><img src='https://images.unsplash.com/photo-1610948237307-bbebf8da8a8d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
+                    <ImgWrapper><img src='https://images.unsplash.com/photo-1610935591850-9a3bf14810c0?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
+                    <ImgWrapper><img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
                     </InstaImgLinks1>
                     {/* <InstaImgLinks2>
                     <img src='https://images.unsplash.com/photo-1610869504857-e425fc2093ab?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
@@ -48,10 +48,30 @@ justify-content:center;
 margin:0;
 width:auto;
 
+/* @media (max-width:650px) {
+    overflow-x:scroll;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    scroll-snap-type:x mandatory;
+} */
+
 img {
     width:280px;
     height:300px;
     margin:10px;
+}
+
+img {
+    width:300px;
+    height:380px;
+    margin:10px;
+}
+`
+
+const ImgWrapper = styled.div `
+@media (max-width:650px) {
+display:none
 }
 `
 
@@ -67,29 +87,27 @@ img {
 // }
 // `
 
-const InstaText = styled.p `
+const InstaText = styled.div `
 display:flex;
 flex-direction:row;
 justify-content:center;
+margin-bottom:30px;
 
-@media (max-width: 576px) {
-    
-}
 `
 
 const InstaContact = styled.div `
-display:flex;
-flex-direction:column;
-justify-content:left;
-text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content:left;
+    text-align:left;
 
-h4 {
-    margin:0;
-}
-p{ 
-    margin:5px;
-    margin-left:0;
-}
+    h4 {
+        margin:0;
+    }
+    p{ 
+        margin:5px;
+        margin-left:0;
+    }
 
 `
 
@@ -97,12 +115,16 @@ const Follow = styled.div `
 button {
     width:130px;
     height:40px;
-    border-radius:5px;
+    border-radius:2px;
     margin-left:50px;
     border:1px solid black;
     background-color:white;
     cursor: pointer;
     outline:none;
+
+    @media(max-width:450px){
+        margin-left:30px;
+    }
 }
 
 button:hover {
@@ -112,7 +134,7 @@ button:hover {
 }
 
 button:active {
-    background-color:grey;
+    background-color:black;
     color:white;
 }
 
