@@ -91,7 +91,7 @@ const InstaText = styled.div `
 display:flex;
 flex-direction:row;
 justify-content:center;
-margin-bottom:30px;
+margin-bottom:25px;
 
 `
 
