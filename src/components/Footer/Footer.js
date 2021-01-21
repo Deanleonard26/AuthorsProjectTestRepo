@@ -36,7 +36,7 @@ const Footer = () => {
                 </Subscribe>
             </FooterWrapper>
             <Copyright>
-            <p>Copyright Authors© 2021</p>
+            <p>Copyright Authors© 202</p>
             </Copyright>
             </FooterDiv>
       )
