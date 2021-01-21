@@ -36,7 +36,7 @@ const Footer = () => {
                 </Subscribe>
             </FooterWrapper>
             <Copyright>
-            <p>Copyright Authors 2020</p>
+            <p>Copyright Authors© 2021</p>
             </Copyright>
             </FooterDiv>
       )
@@ -73,7 +73,12 @@ display:flex;
 justify-content:space-between;
 flex-direction:row;
 flex-wrap:wrap;
-width:30%;
+width:40%;
+
+h4 {
+    margin-bottom:10px;
+    margin-right:40px;
+}
 
 @media (max-width:1300px) {
     width:auto;

@@ -17,7 +17,7 @@ const Instagram = () => {
                     <img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
                     <ImgWrapper><img src='https://images.unsplash.com/photo-1610948237307-bbebf8da8a8d?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
                     <ImgWrapper><img src='https://images.unsplash.com/photo-1610935591850-9a3bf14810c0?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
-                    <ImgWrapper><img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper>
+                    <ImgWrapper1><img src='https://images.unsplash.com/photo-1610824771380-390c72f79f11?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' /></ImgWrapper1>
                     </InstaImgLinks1>
                     {/* <InstaImgLinks2>
                     <img src='https://images.unsplash.com/photo-1610869504857-e425fc2093ab?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' atl='portrait' />
@@ -34,9 +34,11 @@ const InstaWrapper = styled.div`
 display:flex;
 flex-direction:column;
 flex-wrap:wrap;
-justify-content:center;
 text-align:center;
+align-items:center;
 font-family: 'Space Mono', monospace;
+width:100%;
+margin:0;
 margin-bottom:100px;
 `
 
@@ -47,6 +49,7 @@ flex-direction:row;
 justify-content:center;
 margin:0;
 width:auto;
+width:100%;
 
 /* @media (max-width:650px) {
     overflow-x:scroll;
@@ -57,25 +60,28 @@ width:auto;
 } */
 
 img {
-    width:280px;
-    height:300px;
-    margin:10px;
-}
-
-img {
     width:300px;
     height:380px;
     margin:10px;
 }
 `
 
-const ImgWrapper = styled.div `
+const ImgWrapper= styled.div `
 @media (max-width:650px) {
-display:none
+display:none;
+width:100%;
 }
 `
 
-// const InstaImgLinks2 = styled.div`
+const ImgWrapper1 = styled.div `
+    @media (min-width:960px) AND (max-width:1300px){
+        display:none;
+    }
+    @media (max-width:650px) {
+    display:none;
+`
+
+/* // const InstaImgLinks2 = styled.div`
 // display:flex;
 // flex-direction:row;
 // justify-content:center;
@@ -85,14 +91,14 @@ display:none
 //     width:280px;
 //     height:300px;
 // }
-// `
+// ` */
 
 const InstaText = styled.div `
 display:flex;
 flex-direction:row;
 justify-content:center;
 margin-bottom:30px;
-
+width:100%;
 `
 
 const InstaContact = styled.div `
