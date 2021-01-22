@@ -5,6 +5,7 @@ import JoinTheMovement from './components/JoinTheMovement/Movement';
 import Footer from './components/Footer/Footer';
 import Instagram from './components/Instagram/Instagram';
 import Journey from './components/Journey/Journey';
+import Podcast from './components/Podcast/Podcast'
 // import Scrollsnap from './components/ScrollSnap/Scrollsnap';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <StoriesShortcut/>
       <JoinTheMovement/>
       <Instagram/>
+      <Podcast/>
       <Footer/>
     </div>
   );

@@ -13,7 +13,7 @@ const Journey = () => {
 
 const JourneyWrapper = styled.div`
 background-color:lightgray;
-height:250px;
+height:650px;
 margin-bottom:50px;
 
 `

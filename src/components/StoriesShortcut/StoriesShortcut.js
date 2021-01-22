@@ -61,7 +61,8 @@ width:100%;
 img:hover{
     z-index:1;
     transform:scale(2.25);
-    box-shadow:0 10px 60px rgba(25,25,26,.8);
+    box-shadow:0 10px 60px rgba(25,25,26,.2);
+    cursor: pointer;
 }
 
 
