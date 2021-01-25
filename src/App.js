@@ -6,19 +6,19 @@ import Footer from './components/Footer/Footer';
 import Instagram from './components/Instagram/Instagram';
 import Journey from './components/Journey/Journey';
 import Podcast from './components/Podcast/Podcast'
-// import Scrollsnap from './components/ScrollSnap/Scrollsnap';
+import Scrollsnap from './components/ScrollSnap/Scrollsnap';
 
 function App() {
   
   return (
     <div className="App">
-      {/* <Scrollsnap/> */}
-      <Journey/>
+      <Scrollsnap/>
+      {/* <Journey/>
       <StoriesShortcut/>
       <JoinTheMovement/>
       <Instagram/>
-      <Podcast/>
-      <Footer/>
+      <Podcast/> */}
+      {/* <Footer/> */}
     </div>
   );
 }

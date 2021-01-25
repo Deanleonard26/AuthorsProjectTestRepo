@@ -79,7 +79,9 @@ const ImgWrapper1 = styled.div `
     }
     @media (max-width:650px) {
     display:none;
+    }
 `
+    
 
 /* // const InstaImgLinks2 = styled.div`
 // display:flex;

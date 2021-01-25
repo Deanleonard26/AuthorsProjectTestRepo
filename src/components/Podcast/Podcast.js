@@ -11,11 +11,16 @@ const Podcast = () => {
 
 const PodcastDiv = styled.div `
 width:100%;
+display:flex;
+justify-content:center;
 iframe {
-    width:80%;
-    border:0;
-    height:500px;
+      display:flex;
+      justify-content:center;
+      width:80%;
+      border:0;
+      height:500px;
 }
 `
 
 export default Podcast;
+
