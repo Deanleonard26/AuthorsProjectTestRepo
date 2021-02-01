@@ -7,12 +7,16 @@ import Instagram from './components/Instagram/Instagram';
 import Journey from './components/Journey/Journey';
 import Podcast from './components/Podcast/Podcast'
 import Scrollsnap from './components/ScrollSnap/Scrollsnap';
+import AuthorsStory from './components/AuthorsStory/AuthorsStory'
+import Form from './components/Form'
 
 function App() {
   
   return (
     <div className="App">
-      <Scrollsnap/>
+    <Form/>
+    {/* <AuthorsStory/> */}
+      {/* <Scrollsnap/> */}
       {/* <Journey/>
       <StoriesShortcut/>
       <JoinTheMovement/>

@@ -54,6 +54,7 @@ position:relative;
 overflow-y:scroll;
 overflow-x:hidden;
 scroll-snap-type:y mandatory;
+color:white;
 :-webkit-scrollbar {
     display: none;
 }
@@ -64,9 +65,12 @@ img {
 min-width:100vw;
 height:100vh;
 scroll-snap-align:center;
+text-align:center;
 }
 
 h5,h4,p {
+    width:auto;
+    height:auto;
     text-align:left;
     position:absolute;
     width:50%;
@@ -75,7 +79,7 @@ h5,h4,p {
 
 h4 {
     position:absolute;
-    font-size:35px;
+    font-size:45px;
     margin:50px;
 
 }
@@ -83,8 +87,8 @@ h4 {
 p {
     position:absolute;
     text-align:left;
-    font-size:20px;
-    margin:100px 0 0 50px;
+    font-size:25px;
+    margin:120px 0 0 50px;
 }
 
 h5 {
@@ -92,12 +96,29 @@ h5 {
     text-align:left;
     font-size:15px;
     padding-top:2s0px;
-    margin:200px 0 0 50px;
+    margin:230px 0 0 50px;
 }
 
 @media(max-width:800px) {
     h4, p, h5 {
-        margin-bottom:200px;
+        
+        width:90%;
+    }
+
+    h5 {
+        margin-top:220px;
+    }
+}
+
+@media(max-width:400px) {
+     p {
+        
+        width:60%;
+        margin-top:180px;
+    }
+
+    h5 {
+        margin-top:470px;
     }
 }
 `
