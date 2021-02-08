@@ -6,7 +6,7 @@ export default function Form() {
         <DivWrapper>
             <FormWrapper>
                 <TextSection>
-                <h2>TELL YOUR STORY</h2>
+                <h2>TELsL YOUR STORY</h2>
                 </TextSection>
                 <FNameSection>
                 <label>First Name</label>
