@@ -8,13 +8,16 @@ import Journey from './components/Journey/Journey';
 import Podcast from './components/Podcast/Podcast'
 import Scrollsnap from './components/ScrollSnap/Scrollsnap';
 import AuthorsStory from './components/AuthorsStory/AuthorsStory'
-import Form from './components/Form'
+import Form from './components/Form';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   
   return (
     <div className="App">
-    <Form/>
+    <AboutUs/>
+    
+    {/* <Form/> */}
     {/* <AuthorsStory/> */}
       {/* <Scrollsnap/> */}
       {/* <Journey/>
