@@ -33,6 +33,7 @@ export default function AboutUs() {
             <button onClick={openTeam}>Our Team</button>
             <button onClick={openPartners}>Our Partners</button>
             <button onClick={openStory}>Our Story</button>
+            <button onClick={openStory}>Our Vision</button>
             </Navbar>
             <AboutUsSection>
             {OurTeamDiv && <><OurTeam/></>}
@@ -51,7 +52,7 @@ const Navbar = styled.div`
     justify-content:space-evenly;
     align-items:center;
     background-color:lightgray;
-    height:100px;
+    height: 100px;
     margin-top:30px;
 
     button {
