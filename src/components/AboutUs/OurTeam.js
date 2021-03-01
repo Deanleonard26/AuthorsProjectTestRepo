@@ -10,7 +10,7 @@ export default function OurTeam() {
                         src='https://images.unsplash.com/photo-1509305717900-84f40e786d82?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBvcnRyYWl0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                         alt='portrait'
                     />
-                    <h3>Authxrs</h3>
+                    <h3>Authrs</h3>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
                 </StorySection1Img>
                 <StorySection1Img>
